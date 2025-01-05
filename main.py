@@ -16,6 +16,7 @@ def main():
         torch.manual_seed(args.seed)
         torch.cuda.manual_seed(args.seed)
         torch.cuda.manual_seed_all(args.seed)
+        np.random.seed(args.seed)
         
         
     # Make the a directory corresponding to this run for saving results, checkpoints etc.
